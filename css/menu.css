@@ -1,32 +1,3 @@
-#menuToggle {
-    display: flex;
-    justify-content: center;
-}
-
-#menuToggle > ul > li > a {
-    margin: 0 10px;
-    color: black;
-    padding: 15px 5px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.5s;
-}
-
-#menuToggle > ul > li > a:hover {
-  margin: 0 10px;
-  border-bottom: 2px solid #91ac27;
-  text-decoration: none;
-  color: #91ac27;
-  transition: all 0.5s;
-}
-
-#menuToggle input {
-  display: none;
-}
-
-#menu {
-  display: flex;
-  list-style: none;
-}
 
 /*---------hamburger---------*/
 @media only screen and (max-width: 425px) {

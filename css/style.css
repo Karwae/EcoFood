@@ -18,6 +18,11 @@ a, a:visited{
     color: black;
 }
 
+a{
+   text-decoration: none;
+    color: black;
+}
+
 .header-top > article > #logInButton{
     color: white;
 }
@@ -116,12 +121,14 @@ header{
 
 #menu > li{
     margin:0 20px;
-    padding: 10px 0;
+    padding: 10px 0 5px 0;
     border-bottom: 2px solid transparent;
+    transition: .5s all;
 }
 
 #menu > li:hover{
     border-bottom: 2px solid #91ac27;
+    transition: .5s all;
 }
 
 #menu > li:hover > a{
@@ -204,9 +211,9 @@ section:first-child{
     border: 15px solid black;
     background-color: black;
     color: white;
-    width: 25px;
+    width: 52px;
     display: block;
-    height: 25px;
+    height: 52px;
     text-align: center;
     margin: 0 10px;
     transition: .5s all;
@@ -220,6 +227,47 @@ section:first-child{
 
 .footer-copy-rights{
     text-align: center;
+}
+
+#buttonTop {
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonTop:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#buttonTop:active {
+    background-color: #555;
+    color: white;
+}
+
+#buttonTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#cartBody article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 @media screen and (max-width: 425px) {
