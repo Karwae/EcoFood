@@ -1,0 +1,155 @@
+/*Обнулення*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #91ac27;
+    transition: 0.5s all;
+
+}
+
+body{
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+}
+
+body, button, input{
+    font-family: 'Shippori Mincho', serif;
+    font-size: 16px;
+}
+
+.main-wrapper{
+    background-attachment: fixed;
+}
+
+.container{
+    background: white;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+/*HEADER*/
+
+.section__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+/*NAVIGATION*/
+
+.navigation > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+ul > li{
+    list-style: none;
+    margin: 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+}
+
+ul > li:hover{
+    border-bottom: 2px solid #91ac27;
+}
+
+ul > li:hover > a{
+    color: #91ac27;
+}
+
+.line{
+    border-bottom: 2px solid #f5f5f5;
+}
+
+/*MAIN*/
+
+.section__main{
+    margin-top: 15px;
+}
+
+.button__back, .button__log{
+    width: 100%;
+    height: 32px;
+    background-color: #91ac27;
+    color: white;
+}
+
+.button__back > a{
+    color: white;
+}
+
+.button__back:hover{
+    background-color: green;
+    transition: 0.5s all;
+}
+
+.main__article{
+    margin: 40px 0;
+    color: #a6a6a6;
+}
+
+input{
+    margin: 15px 0;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.Login{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #a6a6a6;
+}
+
+.button__log:hover{
+    background-color: green;
+    transition: 0.5s all;
+}
+
+/*FOOTER*/
+
+.footer__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.footer__section > article{
+    margin: 0 20px;
+    width: 300px;
+}
+
+.footer__section> article > h3{
+    font-size: 25px;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.footer-social > a{
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+.footer-copy-rights{
+    display: flex;
+    justify-content: center;
+}
